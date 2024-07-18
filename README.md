@@ -1,8 +1,17 @@
-# React + Vite
+# Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Chat Application! This project is built using React, Vite, MUI and Firebase.
 
-Currently, two official plugins are available:
+https://github.com/user-attachments/assets/29ea84f0-7292-4ab4-8816-bd4bf16e0852
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Task Completed
+- ✅ Use firebase for Auth
+- ✅ A unique link-id should be created on every fresh login(Think Google Meet)
+- ✅ The link-id should be used to chat with people having the same link-id
+- ✅ The unique link-id should expire on logout of the original sender
+
+## Features
+- Real-time chat functionality
+- User authentication
+- Firebase integration
+- Responsive design
