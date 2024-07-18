@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/Home";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
+import Chats from "./pages/Chats";
 
 const App = () => {
   const Layout = () => {
@@ -25,6 +26,10 @@ const App = () => {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/chat/:chatId",
+          element: <Chats />,
         },
       ],
     },

@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Auth } from "../components/Auth";
-import { setAuth } from "../slice/authSlice";
 import { useSelector, useDispatch } from "react-redux";
+import { auth } from "../config/firebaseConfig";
+import { onAuthStateChanged } from "firebase/auth";
 
 const Home = () => {
-  const isAuth = useSelector((state) => state.auth.isAuth);
-  const dispatch = useDispatch();
-
-  if (!isAuth) {
-    return <Auth setIsAuth={(value) => dispatch(setAuth(value))} />;
-  }
-
-  return <div>chat</div>;
+  return (
+    <div>
+      <Auth />
+    </div>
+  );
 };
 
 export default Home;
